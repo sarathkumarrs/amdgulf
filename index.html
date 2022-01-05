@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+
+<script src="./js/floating-wpp.js"></script>
+<link rel="stylesheet" href="./floating-wpp.css">
 </head>
 <body>
     <header class="text-center py-3">
@@ -122,6 +126,7 @@
             </div>
         </div>
     </section>
+    <div id="myButton"></div>
 
     <footer id="contact" class="bg-secondary py-5">
         <div class="container">
@@ -210,7 +215,23 @@
         afterLoad: function(){}
         });
         });
+
+        
+        $(function () {
+            $('#myButton').floatingWhatsApp({
+                phone: '+919746374277',
+                popupMessage: 'Would you like to get a free demo for your child?',
+                message: "I'd like to get a free demo.",
+                showPopup: true,
+                showOnIE: false,
+                headerTitle: 'Welcome!',
+                headerColor: 'crimson',
+                backgroundColor: 'crimson',
+                buttonImage: '<img src="./images/whatsapp.svg" />'
+            });
+        });
         </script>
 
+        
 </body>
 </html>
