@@ -108,3 +108,15 @@ ul {
   font-size: 40px;
   color: white;
 }
+
+nav li {
+  margin-right: 40px;
+}
+
+nav li a {
+  color: black !important;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.93333em;
+}
+
